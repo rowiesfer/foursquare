@@ -1,0 +1,1052 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C11C458C2A5D2709006F88B0 /* foursquareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C458B2A5D2709006F88B0 /* foursquareApp.swift */; };
+		C11C45902A5D270B006F88B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11C458F2A5D270B006F88B0 /* Assets.xcassets */; };
+		C11C45A72A5D270B006F88B0 /* foursquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C45A62A5D270B006F88B0 /* foursquareUITests.swift */; };
+		C11C45A92A5D270B006F88B0 /* foursquareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C45A82A5D270B006F88B0 /* foursquareUITestsLaunchTests.swift */; };
+		C1AA99242A60AC87008D9197 /* FoursquareAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99232A60AC87008D9197 /* FoursquareAPI.docc */; };
+		C1AA99252A60AC87008D9197 /* FoursquareAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AA99222A60AC87008D9197 /* FoursquareAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1AA99282A60AC87008D9197 /* FoursquareAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AA99202A60AC87008D9197 /* FoursquareAPI.framework */; };
+		C1AA99292A60AC87008D9197 /* FoursquareAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1AA99202A60AC87008D9197 /* FoursquareAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1AA992F2A60ACBB008D9197 /* FoursquareClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA992D2A60ACBB008D9197 /* FoursquareClientProtocol.swift */; };
+		C1AA99302A60ACBC008D9197 /* FoursquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA992E2A60ACBB008D9197 /* FoursquareClient.swift */; };
+		C1AA993A2A60ADC5008D9197 /* PlaceList.docc in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99392A60ADC5008D9197 /* PlaceList.docc */; };
+		C1AA99472A60ADC5008D9197 /* PlaceListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99462A60ADC5008D9197 /* PlaceListViewModelTests.swift */; };
+		C1AA99482A60ADC5008D9197 /* PlaceList.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AA99382A60ADC5008D9197 /* PlaceList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1AA994B2A60ADC5008D9197 /* PlaceList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AA99362A60ADC5008D9197 /* PlaceList.framework */; };
+		C1AA994C2A60ADC5008D9197 /* PlaceList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1AA99362A60ADC5008D9197 /* PlaceList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1AA99602A60AE32008D9197 /* PlaceListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99572A60AE32008D9197 /* PlaceListRepository.swift */; };
+		C1AA99622A60AE32008D9197 /* PlaceListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99592A60AE32008D9197 /* PlaceListRepositoryProtocol.swift */; };
+		C1AA99632A60AE32008D9197 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995B2A60AE32008D9197 /* Place.swift */; };
+		C1AA99642A60AE32008D9197 /* PlaceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995C2A60AE32008D9197 /* PlaceResponse.swift */; };
+		C1AA99652A60AE32008D9197 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995D2A60AE32008D9197 /* PlaceListView.swift */; };
+		C1AA99662A60AE32008D9197 /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995E2A60AE32008D9197 /* PlaceListViewModel.swift */; };
+		C1AA99672A60AE32008D9197 /* PlaceListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995F2A60AE32008D9197 /* PlaceListViewState.swift */; };
+		C1AA99692A60B44C008D9197 /* PlaceListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99682A60B44C008D9197 /* PlaceListFactory.swift */; };
+		C1AA996B2A60B95D008D9197 /* PlaceListClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA996A2A60B95D008D9197 /* PlaceListClientStub.swift */; };
+		C1AA996E2A60BA2C008D9197 /* PlaceSearchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C1AA996D2A60BA2C008D9197 /* PlaceSearchResponse.json */; };
+		C1AA99702A60BFF9008D9197 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA996F2A60BFF9008D9197 /* Location.swift */; };
+		C1AA99722A60C0AB008D9197 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99712A60C0AB008D9197 /* Category.swift */; };
+		C1AA99762A60E468008D9197 /* docs.docc in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99752A60E468008D9197 /* docs.docc */; };
+		C1AA99772A6138E2008D9197 /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995E2A60AE32008D9197 /* PlaceListViewModel.swift */; };
+		C1AA99782A6138E6008D9197 /* PlaceListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995F2A60AE32008D9197 /* PlaceListViewState.swift */; };
+		C1AA99792A6138EC008D9197 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995B2A60AE32008D9197 /* Place.swift */; };
+		C1AA997A2A6138EE008D9197 /* PlaceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA995C2A60AE32008D9197 /* PlaceResponse.swift */; };
+		C1AA997B2A6138F1008D9197 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA996F2A60BFF9008D9197 /* Location.swift */; };
+		C1AA997C2A6138F3008D9197 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99712A60C0AB008D9197 /* Category.swift */; };
+		C1AA997D2A6138FA008D9197 /* PlaceListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99592A60AE32008D9197 /* PlaceListRepositoryProtocol.swift */; };
+		C1AA99842A613C40008D9197 /* PlaceListRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AA99832A613C40008D9197 /* PlaceListRepositoryStub.swift */; };
+		C1BB91B72A6170CD0098C181 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = C1BB91B62A6170CD0098C181 /* Nimble */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C11C45A32A5D270B006F88B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11C45802A5D2709006F88B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C11C45872A5D2709006F88B0;
+			remoteInfo = foursquare;
+		};
+		C1AA99262A60AC87008D9197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11C45802A5D2709006F88B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AA991F2A60AC87008D9197;
+			remoteInfo = FoursquareAPI;
+		};
+		C1AA99492A60ADC5008D9197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11C45802A5D2709006F88B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AA99352A60ADC5008D9197;
+			remoteInfo = PlaceList;
+		};
+		C1AA998A2A6158AD008D9197 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11C45802A5D2709006F88B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AA991F2A60AC87008D9197;
+			remoteInfo = FoursquareAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1AA98F32A5EBCFA008D9197 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C1AA994C2A60ADC5008D9197 /* PlaceList.framework in Embed Frameworks */,
+				C1AA99292A60AC87008D9197 /* FoursquareAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C11C45882A5D2709006F88B0 /* foursquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foursquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11C458B2A5D2709006F88B0 /* foursquareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foursquareApp.swift; sourceTree = "<group>"; };
+		C11C458F2A5D270B006F88B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C11C45A22A5D270B006F88B0 /* foursquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foursquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11C45A62A5D270B006F88B0 /* foursquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foursquareUITests.swift; sourceTree = "<group>"; };
+		C11C45A82A5D270B006F88B0 /* foursquareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foursquareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1AA99202A60AC87008D9197 /* FoursquareAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoursquareAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AA99222A60AC87008D9197 /* FoursquareAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoursquareAPI.h; sourceTree = "<group>"; };
+		C1AA99232A60AC87008D9197 /* FoursquareAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FoursquareAPI.docc; sourceTree = "<group>"; };
+		C1AA992D2A60ACBB008D9197 /* FoursquareClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareClientProtocol.swift; sourceTree = "<group>"; };
+		C1AA992E2A60ACBB008D9197 /* FoursquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareClient.swift; sourceTree = "<group>"; };
+		C1AA99362A60ADC5008D9197 /* PlaceList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaceList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AA99382A60ADC5008D9197 /* PlaceList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceList.h; sourceTree = "<group>"; };
+		C1AA99392A60ADC5008D9197 /* PlaceList.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PlaceList.docc; sourceTree = "<group>"; };
+		C1AA993F2A60ADC5008D9197 /* PlaceListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AA99462A60ADC5008D9197 /* PlaceListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModelTests.swift; sourceTree = "<group>"; };
+		C1AA99572A60AE32008D9197 /* PlaceListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListRepository.swift; sourceTree = "<group>"; };
+		C1AA99592A60AE32008D9197 /* PlaceListRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		C1AA995B2A60AE32008D9197 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C1AA995C2A60AE32008D9197 /* PlaceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceResponse.swift; sourceTree = "<group>"; };
+		C1AA995D2A60AE32008D9197 /* PlaceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		C1AA995E2A60AE32008D9197 /* PlaceListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		C1AA995F2A60AE32008D9197 /* PlaceListViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListViewState.swift; sourceTree = "<group>"; };
+		C1AA99682A60B44C008D9197 /* PlaceListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListFactory.swift; sourceTree = "<group>"; };
+		C1AA996A2A60B95D008D9197 /* PlaceListClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListClientStub.swift; sourceTree = "<group>"; };
+		C1AA996D2A60BA2C008D9197 /* PlaceSearchResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlaceSearchResponse.json; sourceTree = "<group>"; };
+		C1AA996F2A60BFF9008D9197 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C1AA99712A60C0AB008D9197 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C1AA99752A60E468008D9197 /* docs.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = docs.docc; sourceTree = "<group>"; };
+		C1AA99832A613C40008D9197 /* PlaceListRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListRepositoryStub.swift; sourceTree = "<group>"; };
+		C1BB91B42A6169DA0098C181 /* foursquare.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = foursquare.xctestplan; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C11C45852A5D2709006F88B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA994B2A60ADC5008D9197 /* PlaceList.framework in Frameworks */,
+				C1AA99282A60AC87008D9197 /* FoursquareAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11C459F2A5D270B006F88B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA991D2A60AC87008D9197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA99332A60ADC5008D9197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA993C2A60ADC5008D9197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BB91B72A6170CD0098C181 /* Nimble in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C11C457F2A5D2709006F88B0 = {
+			isa = PBXGroup;
+			children = (
+				C1BB91B42A6169DA0098C181 /* foursquare.xctestplan */,
+				C11C458A2A5D2709006F88B0 /* foursquare */,
+				C11C45A52A5D270B006F88B0 /* foursquareUITests */,
+				C1AA99212A60AC87008D9197 /* FoursquareAPI */,
+				C1AA99372A60ADC5008D9197 /* PlaceList */,
+				C1AA99452A60ADC5008D9197 /* PlaceListTests */,
+				C11C45892A5D2709006F88B0 /* Products */,
+				C1AA99872A615773008D9197 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C11C45892A5D2709006F88B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C11C45882A5D2709006F88B0 /* foursquare.app */,
+				C11C45A22A5D270B006F88B0 /* foursquareUITests.xctest */,
+				C1AA99202A60AC87008D9197 /* FoursquareAPI.framework */,
+				C1AA99362A60ADC5008D9197 /* PlaceList.framework */,
+				C1AA993F2A60ADC5008D9197 /* PlaceListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C11C458A2A5D2709006F88B0 /* foursquare */ = {
+			isa = PBXGroup;
+			children = (
+				C11C458B2A5D2709006F88B0 /* foursquareApp.swift */,
+				C11C458F2A5D270B006F88B0 /* Assets.xcassets */,
+				C1AA99752A60E468008D9197 /* docs.docc */,
+			);
+			path = foursquare;
+			sourceTree = "<group>";
+		};
+		C11C45A52A5D270B006F88B0 /* foursquareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C11C45A62A5D270B006F88B0 /* foursquareUITests.swift */,
+				C11C45A82A5D270B006F88B0 /* foursquareUITestsLaunchTests.swift */,
+			);
+			path = foursquareUITests;
+			sourceTree = "<group>";
+		};
+		C1AA99212A60AC87008D9197 /* FoursquareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA99222A60AC87008D9197 /* FoursquareAPI.h */,
+				C1AA99232A60AC87008D9197 /* FoursquareAPI.docc */,
+				C1AA992E2A60ACBB008D9197 /* FoursquareClient.swift */,
+				C1AA992D2A60ACBB008D9197 /* FoursquareClientProtocol.swift */,
+			);
+			path = FoursquareAPI;
+			sourceTree = "<group>";
+		};
+		C1AA99372A60ADC5008D9197 /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA99382A60ADC5008D9197 /* PlaceList.h */,
+				C1AA99392A60ADC5008D9197 /* PlaceList.docc */,
+				C1AA99682A60B44C008D9197 /* PlaceListFactory.swift */,
+				C1AA99552A60AE32008D9197 /* PlaceList */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		C1AA99452A60ADC5008D9197 /* PlaceListTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA99822A613C1C008D9197 /* Mock */,
+				C1AA99462A60ADC5008D9197 /* PlaceListViewModelTests.swift */,
+			);
+			path = PlaceListTests;
+			sourceTree = "<group>";
+		};
+		C1AA99552A60AE32008D9197 /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA995D2A60AE32008D9197 /* PlaceListView.swift */,
+				C1AA995E2A60AE32008D9197 /* PlaceListViewModel.swift */,
+				C1AA995F2A60AE32008D9197 /* PlaceListViewState.swift */,
+				C1AA995A2A60AE32008D9197 /* Entity */,
+				C1AA99562A60AE32008D9197 /* Repository */,
+				C1AA996C2A60B9FF008D9197 /* Preview Content */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		C1AA99562A60AE32008D9197 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA99592A60AE32008D9197 /* PlaceListRepositoryProtocol.swift */,
+				C1AA99572A60AE32008D9197 /* PlaceListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C1AA995A2A60AE32008D9197 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA995B2A60AE32008D9197 /* Place.swift */,
+				C1AA995C2A60AE32008D9197 /* PlaceResponse.swift */,
+				C1AA996F2A60BFF9008D9197 /* Location.swift */,
+				C1AA99712A60C0AB008D9197 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C1AA996C2A60B9FF008D9197 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA996A2A60B95D008D9197 /* PlaceListClientStub.swift */,
+				C1AA996D2A60BA2C008D9197 /* PlaceSearchResponse.json */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1AA99822A613C1C008D9197 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA99832A613C40008D9197 /* PlaceListRepositoryStub.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C1AA99872A615773008D9197 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C1AA991B2A60AC87008D9197 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA99252A60AC87008D9197 /* FoursquareAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA99312A60ADC5008D9197 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA99482A60ADC5008D9197 /* PlaceList.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C11C45872A5D2709006F88B0 /* foursquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11C45AC2A5D270B006F88B0 /* Build configuration list for PBXNativeTarget "foursquare" */;
+			buildPhases = (
+				C11C45842A5D2709006F88B0 /* Sources */,
+				C11C45852A5D2709006F88B0 /* Frameworks */,
+				C11C45862A5D2709006F88B0 /* Resources */,
+				C1AA98F32A5EBCFA008D9197 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1AA99272A60AC87008D9197 /* PBXTargetDependency */,
+				C1AA994A2A60ADC5008D9197 /* PBXTargetDependency */,
+			);
+			name = foursquare;
+			packageProductDependencies = (
+			);
+			productName = foursquare;
+			productReference = C11C45882A5D2709006F88B0 /* foursquare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C11C45A12A5D270B006F88B0 /* foursquareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11C45B22A5D270B006F88B0 /* Build configuration list for PBXNativeTarget "foursquareUITests" */;
+			buildPhases = (
+				C11C459E2A5D270B006F88B0 /* Sources */,
+				C11C459F2A5D270B006F88B0 /* Frameworks */,
+				C11C45A02A5D270B006F88B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C11C45A42A5D270B006F88B0 /* PBXTargetDependency */,
+			);
+			name = foursquareUITests;
+			productName = foursquareUITests;
+			productReference = C11C45A22A5D270B006F88B0 /* foursquareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C1AA991F2A60AC87008D9197 /* FoursquareAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AA992A2A60AC87008D9197 /* Build configuration list for PBXNativeTarget "FoursquareAPI" */;
+			buildPhases = (
+				C1AA991B2A60AC87008D9197 /* Headers */,
+				C1AA991C2A60AC87008D9197 /* Sources */,
+				C1AA991D2A60AC87008D9197 /* Frameworks */,
+				C1AA991E2A60AC87008D9197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoursquareAPI;
+			productName = FoursquareAPI;
+			productReference = C1AA99202A60AC87008D9197 /* FoursquareAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1AA99352A60ADC5008D9197 /* PlaceList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AA994D2A60ADC5008D9197 /* Build configuration list for PBXNativeTarget "PlaceList" */;
+			buildPhases = (
+				C1AA99312A60ADC5008D9197 /* Headers */,
+				C1AA99322A60ADC5008D9197 /* Sources */,
+				C1AA99332A60ADC5008D9197 /* Frameworks */,
+				C1AA99342A60ADC5008D9197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1AA998B2A6158AD008D9197 /* PBXTargetDependency */,
+			);
+			name = PlaceList;
+			productName = PlaceList;
+			productReference = C1AA99362A60ADC5008D9197 /* PlaceList.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1AA993E2A60ADC5008D9197 /* PlaceListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AA99502A60ADC5008D9197 /* Build configuration list for PBXNativeTarget "PlaceListTests" */;
+			buildPhases = (
+				C1AA993B2A60ADC5008D9197 /* Sources */,
+				C1AA993C2A60ADC5008D9197 /* Frameworks */,
+				C1AA993D2A60ADC5008D9197 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaceListTests;
+			packageProductDependencies = (
+				C1BB91B62A6170CD0098C181 /* Nimble */,
+			);
+			productName = PlaceListTests;
+			productReference = C1AA993F2A60ADC5008D9197 /* PlaceListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C11C45802A5D2709006F88B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C11C45872A5D2709006F88B0 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					C11C45A12A5D270B006F88B0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C11C45872A5D2709006F88B0;
+					};
+					C1AA991F2A60AC87008D9197 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					C1AA99352A60ADC5008D9197 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					C1AA993E2A60ADC5008D9197 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C11C45872A5D2709006F88B0;
+					};
+				};
+			};
+			buildConfigurationList = C11C45832A5D2709006F88B0 /* Build configuration list for PBXProject "foursquare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C11C457F2A5D2709006F88B0;
+			packageReferences = (
+				C1BB91B52A6170CD0098C181 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
+			productRefGroup = C11C45892A5D2709006F88B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C11C45872A5D2709006F88B0 /* foursquare */,
+				C11C45A12A5D270B006F88B0 /* foursquareUITests */,
+				C1AA991F2A60AC87008D9197 /* FoursquareAPI */,
+				C1AA99352A60ADC5008D9197 /* PlaceList */,
+				C1AA993E2A60ADC5008D9197 /* PlaceListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C11C45862A5D2709006F88B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11C45902A5D270B006F88B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11C45A02A5D270B006F88B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA991E2A60AC87008D9197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA99342A60ADC5008D9197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA996E2A60BA2C008D9197 /* PlaceSearchResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA993D2A60ADC5008D9197 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C11C45842A5D2709006F88B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11C458C2A5D2709006F88B0 /* foursquareApp.swift in Sources */,
+				C1AA99762A60E468008D9197 /* docs.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11C459E2A5D270B006F88B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11C45A72A5D270B006F88B0 /* foursquareUITests.swift in Sources */,
+				C11C45A92A5D270B006F88B0 /* foursquareUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA991C2A60AC87008D9197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA99242A60AC87008D9197 /* FoursquareAPI.docc in Sources */,
+				C1AA992F2A60ACBB008D9197 /* FoursquareClientProtocol.swift in Sources */,
+				C1AA99302A60ACBC008D9197 /* FoursquareClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA99322A60ADC5008D9197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA996B2A60B95D008D9197 /* PlaceListClientStub.swift in Sources */,
+				C1AA99702A60BFF9008D9197 /* Location.swift in Sources */,
+				C1AA99662A60AE32008D9197 /* PlaceListViewModel.swift in Sources */,
+				C1AA993A2A60ADC5008D9197 /* PlaceList.docc in Sources */,
+				C1AA99622A60AE32008D9197 /* PlaceListRepositoryProtocol.swift in Sources */,
+				C1AA99692A60B44C008D9197 /* PlaceListFactory.swift in Sources */,
+				C1AA99602A60AE32008D9197 /* PlaceListRepository.swift in Sources */,
+				C1AA99652A60AE32008D9197 /* PlaceListView.swift in Sources */,
+				C1AA99642A60AE32008D9197 /* PlaceResponse.swift in Sources */,
+				C1AA99632A60AE32008D9197 /* Place.swift in Sources */,
+				C1AA99672A60AE32008D9197 /* PlaceListViewState.swift in Sources */,
+				C1AA99722A60C0AB008D9197 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AA993B2A60ADC5008D9197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AA99772A6138E2008D9197 /* PlaceListViewModel.swift in Sources */,
+				C1AA99842A613C40008D9197 /* PlaceListRepositoryStub.swift in Sources */,
+				C1AA997A2A6138EE008D9197 /* PlaceResponse.swift in Sources */,
+				C1AA99472A60ADC5008D9197 /* PlaceListViewModelTests.swift in Sources */,
+				C1AA99782A6138E6008D9197 /* PlaceListViewState.swift in Sources */,
+				C1AA997B2A6138F1008D9197 /* Location.swift in Sources */,
+				C1AA997D2A6138FA008D9197 /* PlaceListRepositoryProtocol.swift in Sources */,
+				C1AA99792A6138EC008D9197 /* Place.swift in Sources */,
+				C1AA997C2A6138F3008D9197 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C11C45A42A5D270B006F88B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C11C45872A5D2709006F88B0 /* foursquare */;
+			targetProxy = C11C45A32A5D270B006F88B0 /* PBXContainerItemProxy */;
+		};
+		C1AA99272A60AC87008D9197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1AA991F2A60AC87008D9197 /* FoursquareAPI */;
+			targetProxy = C1AA99262A60AC87008D9197 /* PBXContainerItemProxy */;
+		};
+		C1AA994A2A60ADC5008D9197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1AA99352A60ADC5008D9197 /* PlaceList */;
+			targetProxy = C1AA99492A60ADC5008D9197 /* PBXContainerItemProxy */;
+		};
+		C1AA998B2A6158AD008D9197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1AA991F2A60AC87008D9197 /* FoursquareAPI */;
+			targetProxy = C1AA998A2A6158AD008D9197 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C11C45AA2A5D270B006F88B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C11C45AB2A5D270B006F88B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C11C45AD2A5D270B006F88B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.foursquare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C11C45AE2A5D270B006F88B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.foursquare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C11C45B32A5D270B006F88B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.foursquareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = foursquare;
+			};
+			name = Debug;
+		};
+		C11C45B42A5D270B006F88B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.foursquareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = foursquare;
+			};
+			name = Release;
+		};
+		C1AA992B2A60AC87008D9197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.FoursquareAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1AA992C2A60AC87008D9197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.FoursquareAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1AA994E2A60ADC5008D9197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.PlaceList;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1AA994F2A60ADC5008D9197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.PlaceList;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1AA99512A60ADC5008D9197 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.PlaceListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foursquare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foursquare";
+			};
+			name = Debug;
+		};
+		C1AA99522A60ADC5008D9197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jfrowies.PlaceListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foursquare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/foursquare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C11C45832A5D2709006F88B0 /* Build configuration list for PBXProject "foursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11C45AA2A5D270B006F88B0 /* Debug */,
+				C11C45AB2A5D270B006F88B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11C45AC2A5D270B006F88B0 /* Build configuration list for PBXNativeTarget "foursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11C45AD2A5D270B006F88B0 /* Debug */,
+				C11C45AE2A5D270B006F88B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11C45B22A5D270B006F88B0 /* Build configuration list for PBXNativeTarget "foursquareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11C45B32A5D270B006F88B0 /* Debug */,
+				C11C45B42A5D270B006F88B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AA992A2A60AC87008D9197 /* Build configuration list for PBXNativeTarget "FoursquareAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AA992B2A60AC87008D9197 /* Debug */,
+				C1AA992C2A60AC87008D9197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AA994D2A60ADC5008D9197 /* Build configuration list for PBXNativeTarget "PlaceList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AA994E2A60ADC5008D9197 /* Debug */,
+				C1AA994F2A60ADC5008D9197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AA99502A60ADC5008D9197 /* Build configuration list for PBXNativeTarget "PlaceListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AA99512A60ADC5008D9197 /* Debug */,
+				C1AA99522A60ADC5008D9197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1BB91B52A6170CD0098C181 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1BB91B62A6170CD0098C181 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1BB91B52A6170CD0098C181 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C11C45802A5D2709006F88B0 /* Project object */;
+}

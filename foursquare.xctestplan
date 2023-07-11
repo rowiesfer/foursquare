@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "5A317DDF-4F83-4C44-9956-60FB78CF3EDD",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:foursquare.xcodeproj",
+      "identifier" : "C11C45872A5D2709006F88B0",
+      "name" : "foursquare"
+    }
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:foursquare.xcodeproj",
+        "identifier" : "C11C45A12A5D270B006F88B0",
+        "name" : "foursquareUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:foursquare.xcodeproj",
+        "identifier" : "C1AA993E2A60ADC5008D9197",
+        "name" : "PlaceListTests"
+      }
+    }
+  ],
+  "version" : 1
+}
